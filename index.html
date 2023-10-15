@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Picker</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <main class="container">
+        <div class="color_display"></div>
+        <div class="edit">
+            <div class="direction">
+                <p>Direction</p>
+                <select id="selection">
+                    <option value="to top">Top</option>
+                    <option value="to right top" selected>Right top</option>
+                    <option value="to right">Right</option>
+                    <option value="to right bottom">Right bottom</option>
+                    <option value="to bottom">Bottom</option>
+                    <option value="to left bottom">Left bottom</option>
+                    <option value="to left">Left</option>
+                    <option value="to left top">Left top</option>
+                </select>
+            </div>
+            <div class="color">
+                <p>Colors</p>
+                <div class="color_box">
+                    <input type="color" value="#456456">
+                    <input type="color" value="#454545">
+                </div>
+            </div>
+        </div>
+        <div id="Text">
+            <p class="tx">background-image:linear-gradient(to left bottom,#456456,#123123);</p>
+        </div>
+        <div class="btn">
+            <button id="refresh">Refresh</button>
+            <button id="copy">Copy Code</button>
+        </div>
+    </main>                                                          
+
+    <script src="./script.js"></script>
+</body>
+</html>

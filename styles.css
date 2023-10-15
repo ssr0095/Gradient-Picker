@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@400;500&family=Outfit:wght@400;700&display=swap');
+
+:root{
+    --dgreen: #023000;
+    --lgreen:#98ff92;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "outfit",sans-serif;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.5rem;
+    background: #d9fcff;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 20px;
+    background: var(--lgreen);
+    gap: 15px;
+    box-shadow: 5px 5px 16px 0px #2e2e2e2e;
+}
+
+.edit{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.color_display{
+    width: 250px;
+    height: 150px;
+    background: linear-gradient(to right top, #977790, #e31396);
+    border-radius: 6px;
+
+}
+#Text{
+    width: 250px;
+    background: #60b183a2;
+    padding: 5px 8px;
+    border-radius: 10px;
+}
+
+#Text p{
+    font-size: 0.8rem;
+    color: #333333;
+    cursor: default;
+}
+
+#Text:hover{
+    background: #dfdede98;
+}
+#Text:active{
+    background: #00361476;
+}
+#Text:active p{
+    color: #8dffad;
+}
+
+.btn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.btn button{
+    flex:1;
+    justify-content: stretch;
+}
+
+p{
+    font-size: 0.9rem;
+}
+
+
+input {
+    /* width: 100%; */
+    height: 30px;
+    outline: none;
+    border: 1px solid rgba(129, 129, 129, 0.655);
+    padding: 0 1px;
+    border-radius: 5px;
+}
+
+select {
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: none;
+    font-size: 0.7rem;
+    padding: 0 10px;
+    border-radius: 5px;
+    background: var(--dgreen);
+    color:  var(--lgreen);
+
+}
+button {
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: none;
+    font-size: 0.7rem;
+    padding: 0 10px;
+    border-radius: 5px;
+    background: var(--dgreen);
+    color:  var(--lgreen);
+
+}
+
+select option:hover{
+    /* margin-top: 5px; */
+    background: var(--lgreen);
+    color:  var(--dgreen);
+
+}
+
+button:active {
+    background: #64f85c;
+    color: var(--dgreen);
+}
+
+
+@media (width<780px) {
+    .forecast{
+        min-width: 180px;
+        
+    }
+}
+@media (width<=765px) {
+    .input_box{
+        grid-column: 1 / -1;
+        grid-row: 1 / -1;
+    }
+    #forecast{
+        grid-column: 1 / -1;
+    }
+    .forecast{
+        min-width: 250px;
+    }
+    .current_details{
+        grid-column: 1 / -1;
+    }
+
+}
